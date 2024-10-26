@@ -13,11 +13,11 @@ from threading import Thread
 
 loop = asyncio.get_event_loop()
 
-TOKEN = '7900075083:AAHZ5Mt82d9IQ8YKK-E3E8s5cGomjwaZPFU'
+TOKEN = '7351147654:AAHVW3ntjnQodNept5PfPQIxka5EfV5_H7o'
 MONGO_URI = 'mongodb+srv://Bishal:Bishal@bishal.dffybpx.mongodb.net/?retryWrites=true&w=majority&appName=Bishal'
-FORWARD_CHANNEL_ID = -10012179219444
-CHANNEL_ID = -10012179219444
-error_channel_id = -10012179219444
+FORWARD_CHANNEL_ID = -1002155938559
+CHANNEL_ID = -1002155938559
+error_channel_id = -1002155938559
 
 logging.basicConfig(format='%(asctime)s - %(name)s - %(levelname)s - %(message)s', level=logging.INFO)
 
@@ -195,7 +195,7 @@ def handle_message(message):
         bot.reply_to(message, "*Instant++ Plan selected*", parse_mode='Markdown')
         attack_command(message)
     elif message.text == "Canary Download✔️":
-        bot.send_message(message.chat.id, "*Please use the following link for Canary Download: https://t.me/HackingworldCheats/2990*", parse_mode='Markdown')
+        bot.send_message(message.chat.id, "*Please use the following link for Canary Download: https://t.me/ddosisnowon/2990*", parse_mode='Markdown')
     elif message.text == "My Account🏦":
         user_id = message.from_user.id
         user_data = users_collection.find_one({"user_id": user_id})
